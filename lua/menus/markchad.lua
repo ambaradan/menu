@@ -88,7 +88,7 @@ return {
 	{ name = "separator" },
 
 	{
-		name = "Close all buffers",
+		name = "󰅘 Close all buffers",
 		cmd = "%bd!",
 		rtxt = "<leader>cx",
 	},

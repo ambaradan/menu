@@ -31,6 +31,16 @@ return {
 		cmd = "LazyGit",
 		rtxt = "<leader>lg",
 	},
+    {
+    name = " Git Commits",
+    cmd = "Telescope git_commits",
+    rtxt = "<leader>fo",
+  },
+  {
+    name = " Git Status",
+    cmd = "Telescope git_status",
+    rtxt = "<leader>fo",
+  },
 
 	{ name = "separator" },
 
@@ -86,7 +96,11 @@ return {
 	},
 
 	{ name = "separator" },
-
+	{
+		name = "󰅘 Close all buffers",
+		cmd = "%bd!",
+		rtxt = "<leader>cx",
+	},
 	{
 		name = "󰞋 Help",
 		cmd = "Telescope help_tags",

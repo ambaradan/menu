@@ -35,6 +35,11 @@ return {
 		rtxt = "<A-o>",
 	},
 	{
+		name = " Zen Mode",
+		cmd = "ZenMode",
+		rtxt = "<leader>zm",
+	},
+	{
 		name = " Render Markdown (toogle)",
 		cmd = "RenderMarkdown toggle",
 	},

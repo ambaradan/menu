@@ -42,6 +42,7 @@ return {
 	{
 		name = " Render Markdown (toogle)",
 		cmd = "RenderMarkdown toggle",
+    rtxt = "<leader>M",
 	},
   {
     name = "󰉴 Show Headers",

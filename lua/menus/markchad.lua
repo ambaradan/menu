@@ -35,7 +35,7 @@ return {
 		rtxt = "<A-o>",
 	},
 	{
-		name = " Zen Mode",
+		name = "󱩽 Zen Mode",
 		cmd = "ZenMode",
 		rtxt = "<leader>zm",
 	},

@@ -26,7 +26,16 @@ return {
 		cmd = "LazyGit",
 		rtxt = "<leader>lg",
 	},
-
+	{
+		name = " Git Commits",
+		cmd = "Telescope git_commits",
+		rtxt = "<leader>fo",
+	},
+	{
+		name = " Git Status",
+		cmd = "Telescope git_status",
+		rtxt = "<leader>fo",
+	},
 	{ name = "separator" },
 
 	{
@@ -42,25 +51,25 @@ return {
 	{
 		name = " Render Markdown (toogle)",
 		cmd = "RenderMarkdown toggle",
-    rtxt = "<leader>M",
+		rtxt = "<leader>M",
 	},
-  {
-    name = "󰉴 Show Headers",
-    cmd = "Trouble symbols toggle focus=false",
-    rtxt = "<leader>ts",
-  },
+	{
+		name = "󰉴 Show Headers",
+		cmd = "Trouble symbols toggle focus=false",
+		rtxt = "<leader>ts",
+	},
 
 	{ name = "separator" },
-  {
-    name = " Show Errors (buffer)",
-    cmd = "Trouble diagnostics toggle filter.buf=0",
-    rtxt = "<leader>tb",
-  },
-  {
-    name = " Show Errors (workspace)",
-    cmd = "Trouble diagnostics toggle",
-    rtxt = "<leader>tt",
-  },
+	{
+		name = " Show Errors (buffer)",
+		cmd = "Trouble diagnostics toggle filter.buf=0",
+		rtxt = "<leader>tb",
+	},
+	{
+		name = " Show Errors (workspace)",
+		cmd = "Trouble diagnostics toggle",
+		rtxt = "<leader>tt",
+	},
 
 	{ name = "separator" },
 

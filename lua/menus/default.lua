@@ -7,7 +7,7 @@ return {
 	{
 		name = " Recent Files",
 		cmd = "Telescope oldfiles",
-		rtxt = "<leader>ff",
+		rtxt = "<leader>fo",
 	},
 	{
 		name = " File Manager",
@@ -30,7 +30,7 @@ return {
 	{
 		name = " Git Status",
 		cmd = "Telescope git_status",
-		rtxt = "<leader>ft",
+		rtxt = "<leader>gt",
 	},
 
 	{ name = "separator" },

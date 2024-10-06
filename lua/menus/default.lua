@@ -25,12 +25,12 @@ return {
 	{
 		name = " Git Commits",
 		cmd = "Telescope git_commits",
-		rtxt = "<leader>fo",
+		rtxt = "<leader>fm",
 	},
 	{
 		name = " Git Status",
 		cmd = "Telescope git_status",
-		rtxt = "<leader>fo",
+		rtxt = "<leader>ft",
 	},
 
 	{ name = "separator" },
@@ -62,7 +62,7 @@ return {
 		items = "lsp",
 	},
 	{
-		name = "  Search & Replace",
+		name = " Search & Replace",
 		hl = "Exblue",
 		items = "search",
 	},
@@ -70,7 +70,7 @@ return {
 	{ name = "separator" },
 
 	{
-		name = " Command Line",
+		name = "  Command Line",
 		hl = "ExRed",
 		cmd = "Telescope cmdline",
 		rtxt = ",",

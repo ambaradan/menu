@@ -1,12 +1,4 @@
 return {
-
-  {
-    name = "Lsp Attached",
-    cmd = "LspInfo",
-  },
-
-	{ name = "separator" },
-
   {
     name = "Goto Definition",
     cmd = vim.lsp.buf.definition,

@@ -1,46 +1,37 @@
 return {
 	{
-		name = " Command Line",
-		hl = "ExRed",
-		cmd = "Telescope cmdline",
-		rtxt = ",",
+		name = " Open File",
+		cmd = "Telescope find_files",
+		rtxt = "<leader>ff",
 	},
 	{
-		name = " Terminal (float)",
-		cmd = function()
-			require("nvchad.term").toggle({
-				pos = "float",
-				id = "floatTerm",
-				float_opts = {
-					row = 0.45,
-					col = 0.40,
-					width = 0.6,
-					height = 0.4,
-				},
-			})
-		end,
-		rtxt = "<A-i>",
+		name = " Recent Files",
+		cmd = "Telescope oldfiles",
+		rtxt = "<leader>ff",
 	},
 	{
-		name = " File Manager (float)",
+		name = " File Manager",
 		cmd = "Neotree float toggle",
 		rtxt = "-",
 	},
+
+	{ name = "separator" },
+
 	{
 		name = " Git Manager",
 		cmd = "LazyGit",
 		rtxt = "<leader>lg",
 	},
-    {
-    name = " Git Commits",
-    cmd = "Telescope git_commits",
-    rtxt = "<leader>fo",
-  },
-  {
-    name = " Git Status",
-    cmd = "Telescope git_status",
-    rtxt = "<leader>fo",
-  },
+	{
+		name = " Git Commits",
+		cmd = "Telescope git_commits",
+		rtxt = "<leader>fo",
+	},
+	{
+		name = " Git Status",
+		cmd = "Telescope git_status",
+		rtxt = "<leader>fo",
+	},
 
 	{ name = "separator" },
 
@@ -74,11 +65,32 @@ return {
 	{ name = "separator" },
 
 	{
-		name = "󰬳 Search & Replace",
+		name = "  Search & Replace",
 		hl = "Exblue",
 		items = "search",
 	},
-
+	{
+		name = " Command Line",
+		hl = "ExRed",
+		cmd = "Telescope cmdline",
+		rtxt = ",",
+	},
+	{
+		name = " Terminal",
+		cmd = function()
+			require("nvchad.term").toggle({
+				pos = "float",
+				id = "floatTerm",
+				float_opts = {
+					row = 0.45,
+					col = 0.40,
+					width = 0.6,
+					height = 0.4,
+				},
+			})
+		end,
+		rtxt = "<A-i>",
+	},
 	{ name = "separator" },
 	{
 		name = "󰅘 Close all buffers",

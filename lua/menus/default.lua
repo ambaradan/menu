@@ -61,14 +61,14 @@ return {
 		hl = "Exblue",
 		items = "lsp",
 	},
-
-	{ name = "separator" },
-
 	{
 		name = "  Search & Replace",
 		hl = "Exblue",
 		items = "search",
 	},
+
+	{ name = "separator" },
+
 	{
 		name = " Command Line",
 		hl = "ExRed",

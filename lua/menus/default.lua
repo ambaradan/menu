@@ -22,16 +22,6 @@ return {
 		cmd = "Neogit kind=vsplit",
 		rtxt = "<leader>ng",
 	},
-	{
-		name = " Git Commits",
-		cmd = "Telescope git_commits",
-		rtxt = "<leader>fm",
-	},
-	{
-		name = " Git Status",
-		cmd = "Telescope git_status",
-		rtxt = "<leader>gt",
-	},
 
 	{ name = "separator" },
 

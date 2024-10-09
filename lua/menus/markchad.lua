@@ -23,8 +23,8 @@ return {
 	},
 	{
 		name = " Git Manager",
-		cmd = "LazyGit",
-		rtxt = "<leader>lg",
+		cmd = "Neogit kind=vsplit",
+		rtxt = "<leader>ng",
 	},
 	{
 		name = " Git Commits",

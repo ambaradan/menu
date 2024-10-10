@@ -38,6 +38,9 @@ return {
 		end,
 		rtxt = "<leader>fm",
 	},
+
+	{ name = "separator" },
+
 	{
 		name = " Code Actions",
 		cmd = vim.lsp.buf.code_action,
@@ -51,6 +54,10 @@ return {
 		hl = "Exblue",
 		items = "lsp",
 	},
+
+	{ name = "separator" },
+
+
 	{
 		name = " Search & Replace",
 		hl = "Exblue",

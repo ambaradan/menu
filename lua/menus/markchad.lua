@@ -1,10 +1,34 @@
 return {
+	{
+		name = " Open File",
+		cmd = "Telescope find_files",
+		rtxt = "<leader>ff",
+	},
+	{
+		name = " Recent Files",
+		cmd = "Telescope oldfiles",
+		rtxt = "<leader>fo",
+	},
+	{
+		name = " File Manager",
+		cmd = "Neotree float toggle",
+		rtxt = "-",
+	},
+
+	{ name = "separator" },
+
+	{
+		name = " Git Manager",
+		cmd = "Neogit kind=vsplit",
+		rtxt = "<leader>ng",
+	},
+
+	{ name = "separator" },
 
 	{
 		name = "󰉸 Format Buffer",
 		cmd = function()
 			local ok, conform = pcall(require, "conform")
-
 			if ok then
 				conform.format({ lsp_fallback = true })
 			else
@@ -12,19 +36,6 @@ return {
 			end
 		end,
 		rtxt = "<leader>fm",
-	},
-
-	{ name = "separator" },
-
-	{
-		name = " File Manager (float)",
-		cmd = "Neotree float toggle",
-		rtxt = "-",
-	},
-	{
-		name = " Git Manager",
-		cmd = "Neogit kind=vsplit",
-		rtxt = "<leader>ng",
 	},
 
 	{ name = "separator" },

@@ -29,7 +29,6 @@ return {
 		name = "󰉸 Format Buffer",
 		cmd = function()
 			local ok, conform = pcall(require, "conform")
-
 			if ok then
 				conform.format({ lsp_fallback = true })
 			else
@@ -42,21 +41,39 @@ return {
 	{ name = "separator" },
 
 	{
-		name = " Code Actions",
-		cmd = vim.lsp.buf.code_action,
-		rtxt = "<leader>ca",
+		name = " Markdown Preview",
+		cmd = "PeekOpen",
+		rtxt = "<A-o>",
 	},
-
-	{ name = "separator" },
-
 	{
-		name = "󰘦 Lsp Actions",
-		hl = "Exblue",
-		items = "lsp",
+		name = "󱩽 Zen Mode",
+		cmd = "ZenMode",
+		rtxt = "<leader>zm",
+	},
+	{
+		name = " Render Markdown (toogle)",
+		cmd = "RenderMarkdown toggle",
+		rtxt = "<leader>M",
+	},
+	{
+		name = "󰉴 Show Headers",
+		cmd = "Trouble symbols toggle focus=false",
+		rtxt = "<leader>ts",
 	},
 
 	{ name = "separator" },
+	{
+		name = " Show Errors (buffer)",
+		cmd = "Trouble diagnostics toggle filter.buf=0",
+		rtxt = "<leader>tb",
+	},
+	{
+		name = " Show Errors (workspace)",
+		cmd = "Trouble diagnostics toggle",
+		rtxt = "<leader>tt",
+	},
 
+	{ name = "separator" },
 
 	{
 		name = " Search & Replace",
@@ -67,36 +84,8 @@ return {
 	{ name = "separator" },
 
 	{
-		name = "  Command Line",
-		hl = "ExRed",
-		cmd = "Telescope cmdline",
-		rtxt = ",",
-	},
-	{
-		name = " Terminal",
-		cmd = function()
-			require("nvchad.term").toggle({
-				pos = "float",
-				id = "floatTerm",
-				float_opts = {
-					row = 0.45,
-					col = 0.40,
-					width = 0.6,
-					height = 0.4,
-				},
-			})
-		end,
-		rtxt = "<A-i>",
-	},
-	{ name = "separator" },
-	{
 		name = "󰅘 Close all buffers",
 		cmd = "%bd!",
 		rtxt = "<leader>cx",
-	},
-	{
-		name = "󰞋 Help",
-		cmd = "Telescope help_tags",
-		rtxt = "<leader>fh",
 	},
 }

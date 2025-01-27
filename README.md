@@ -10,8 +10,8 @@ https://github.com/user-attachments/assets/89d96170-e039-4d3d-9640-0fdc3358a833
 ## Install
 
 ```lua
-{ "nvchad/volt" , lazy = true },
-{ "nvchad/menu" , lazy = true },
+{ "nvzone/volt" , lazy = true },
+{ "nvzone/menu" , lazy = true },
 ```
 
 ## Usage
@@ -36,10 +36,15 @@ vim.keymap.set("n", "<C-t>", function()
 end, {})
 
 -- mouse users + nvimtree users!
-vim.keymap.set("n", "<RightMouse>", function()
+vim.keymap.set({ "n", "v" }, "<RightMouse>", function()
+  require('menu.utils').delete_old_menus()
+
   vim.cmd.exec '"normal! \\<RightMouse>"'
 
-  local options = vim.bo.ft == "NvimTree" and "nvimtree" or "default"
+  -- clicked buf
+  local buf = vim.api.nvim_win_get_buf(vim.fn.getmousepos().winid)
+  local options = vim.bo[buf].ft == "NvimTree" and "nvimtree" or "default"
+
   require("menu").open(options, { mouse = true })
 end, {})
 ```
